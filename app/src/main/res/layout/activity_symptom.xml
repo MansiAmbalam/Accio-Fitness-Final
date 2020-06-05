@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:dropDownAnchor="@id/text_view_symptoms"
+            android:hint="Select a symptom"
+            android:popupBackground="@color/colorNavigation" />
+
+
+        <TextView
+            android:id="@+id/text_view_symptoms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:onClick="displayDisease"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp" />
+
+        <TextView
+            android:id="@+id/symResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="200dp"
+            android:textSize="20sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSearch"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="300dp"
+        android:layout_toRightOf="@id/btnSearch"
+        android:clickable="true"
+        android:onClick="goUpdate"
+        app:maxImageSize="78dp"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content">
+
+    <Button
+        android:id="@+id/btnCardio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/btnWellness"
+        android:layout_marginStart="20dp"
+        android:onClick="displayImg"
+        android:text="Cardio" />
+
+    <Button
+        android:id="@+id/btnStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/btnCardio"
+        android:layout_toRightOf="@id/btnCardio"
+        android:text="Strength" />
+
+    <Button
+        android:id="@+id/btnFlex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/btnStrength"
+        android:layout_toRightOf="@id/btnStrength"
+        android:onClick="displayImg"
+        android:text="Flex" />
+
+    <Button
+        android:id="@+id/btnWellness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCardio"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="displayImg"
+        android:text="Wellness" />
+
+    <Button
+        android:id="@+id/btnYoga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStrength"
+        android:layout_alignRight="@id/btnStrength"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btnWellness"
+        android:onClick="displayImg"
+        android:text="Yoga" />
+
+    <Button
+        android:id="@+id/btnAbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFlex"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/btnYoga"
+        android:onClick="displayImg"
+        android:text="Abs" />
+
+    <Button
+        android:id="@+id/btnFull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnWellness"
+        android:layout_alignStart="@id/btnWellness"
+        android:layout_alignEnd="@id/btnWellness"
+        android:layout_marginTop="20dp"
+        android:onClick="displayImg"
+        android:text="Full" />
+
+    <Button
+        android:id="@+id/btnLower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnYoga"
+        android:layout_alignStart="@id/btnStrength"
+        android:layout_alignEnd="@id/btnStrength"
+        android:layout_marginTop="20dp"
+        android:onClick="displayImg"
+        android:layout_toRightOf="@id/btnFull"
+        android:text="Lower" />
+
+    <Button
+        android:id="@+id/btnUpper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAbs"
+        android:layout_alignRight="@id/btnAbs"
+        android:layout_marginTop="20dp"
+        android:onClick="displayImg"
+        android:text="Upper" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"/>
+</RelativeLayout>
